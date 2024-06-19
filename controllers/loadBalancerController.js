@@ -44,7 +44,7 @@ const logStream = fs.createWriteStream(path.join(__dirname, '../logs/request.log
 // log current length of queues
 const logQueueMetrics = () => {
   const logData = `Queue lengths - FIFO: ${fifoQueue.length()}, Priority: ${priorityQueue.length()}, RoundRobin: ${roundRobinQueue.length()}\n`;
-  logStream.write(logData);
+//   logStream.write(logData);
 };
 
 
@@ -95,11 +95,11 @@ const sendRequest = async (req, res, targetUrl) => {
       timeout: 10000 
     });
     const duration = Date.now() - start;
-    logStream.write(`Request to ${req.url} routed to ${targetUrl} - Duration: ${duration} \n`);
-    res.status(response.status).json(response.data);
+    // logStream.write(`Request to ${req.url} routed to ${targetUrl} - Duration: ${duration} \n`);
+    // res.status(response.status).json(response.data);
   } catch (error) {
     const errorMsg = `Error routing the request to ${targetUrl}: ${error.message}`;
-    logStream.write(`${errorMsg}\n`);
+    // logStream.write(`${errorMsg}\n`);
     res.status(500).json({ error: errorMsg });
   }
 };
