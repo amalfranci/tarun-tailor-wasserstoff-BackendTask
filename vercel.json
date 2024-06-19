@@ -1,13 +1,13 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "server.js", "use": "@vercel/node" },
-      { "src": "mockApis/mockApis.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "src": "/api1", "dest": "/server.js" },
-      { "src": "/api2", "dest": "/server.js" },
-      { "src": "/api3", "dest": "/server.js" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "mockApis/mockApis.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api1", "dest": "/server.js" },
+    { "src": "/api2", "dest": "/server.js" },
+    { "src": "/api3", "dest": "/server.js" },
+    { "src": "/", "dest": "/server.js" } 
+  ]
+}

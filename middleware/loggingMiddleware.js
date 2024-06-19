@@ -18,7 +18,8 @@ const loggingMiddleware = morgan((tokens, req, res) => {
     `Queue lengths - FIFO: ${fifoQueue.length()}, Priority: ${priorityQueue.length()}, RoundRobin: ${roundRobinQueue.length()}`,
   ].join(' ');
 
-  logStream.write(logEntry + '\n');
+  // logStream.write(logEntry + '\n');
+  console.log(logEntry);
   return logEntry;
 }, { stream: logStream });
 

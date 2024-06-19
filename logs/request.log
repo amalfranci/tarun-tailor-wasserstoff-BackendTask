@@ -32,3 +32,10 @@ Queue lengths- FIFO : 1,Priority : 0,RoundRobin : 0
 Error routing the request to http://localhost:4000/api1: Data is not defined
 GET /api1 500 88 - 1074.927 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
 GET /api1 500 88 - 1074.927 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET / 200 38 - 33.474 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET / 200 38 - 33.474 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /favicon.ico   -  ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /favicon.ico   -  ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
