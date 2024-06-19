@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\ADMIN\\Desktop\\Wasserstoff-Back-end-Task\\logs\\.2c002426e78f885e8d219aac146d38118adbf5e0-audit.json",
+    "files": [
+        {
+            "date": 1718813105370,
+            "name": "C:\\Users\\ADMIN\\Desktop\\Wasserstoff-Back-end-Task\\logs\\application-2024-06-19.log",
+            "hash": "9c0a12c303e2d381e9f48b3bc4b6dae57fd4ff192ae0add819cd015ab93e53c9"
+        }
+    ],
+    "hashType": "sha256"
+}

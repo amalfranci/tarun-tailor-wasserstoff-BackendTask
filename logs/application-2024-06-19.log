@@ -1,0 +1,4 @@
+2024-06-19T16:05:29.187Z info: GET /api1 200 39 - 1022.716 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+2024-06-19T16:06:09.505Z info: GET /api3 200 33 - 0.695 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+2024-06-19T16:06:14.219Z info: GET /api3 500 33 - 0.491 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+2024-06-19T16:06:15.663Z info: GET /api3 200 33 - 0.536 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
