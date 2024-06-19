@@ -1,11 +1,13 @@
 // middlewares/logging.js
+
 const fs = require('fs');
 const path = require('path');
 const morgan = require('morgan');
-const { fifoQueue, priorityQueue, roundRobinQueue } = require('../controllers/loadBalancerController');
+const { fifoQueue,priorityQueue,roundRobinQueue } = require('../controllers/loadBalancerController');
 
 const logStream = fs.createWriteStream(path.join(__dirname, '../logs/request.log'), { flags: 'a' });
 
+// Define a custom logging format using morgan
 const loggingMiddleware = morgan((tokens, req, res) => {
   const logEntry = [
     tokens.method(req, res),

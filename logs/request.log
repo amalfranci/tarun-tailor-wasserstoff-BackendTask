@@ -1,16 +1,34 @@
-Queue lengths - FIFO: 0, Priority: 1, RoundRobin: 0
-GET /api2   -  ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
-GET /api2   -  ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
-Request to /api2 routed to http://localhost:4000/api2 - Duration: 6102ms
+GET /api2 500 1452 - 14.707 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api2 500 1452 - 14.707 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths- FIFO : 0,Priority : 1,RoundRobin : 0
+Error routing the request to http://localhost:4000/api2: Data is not defined
+GET /api2 500 88 - 5687.146 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api2 500 88 - 5687.146 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths- FIFO : 1,Priority : 0,RoundRobin : 0
+Error routing the request to http://localhost:4000/api1: Data is not defined
+GET /api1 500 88 - 1013.364 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 500 88 - 1013.364 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths- FIFO : 1,Priority : 0,RoundRobin : 0
+Error routing the request to http://localhost:4000/api1: Data is not defined
+GET /api1 500 88 - 1010.512 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 500 88 - 1010.512 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths- FIFO : 1,Priority : 0,RoundRobin : 0
+Error routing the request to http://localhost:4000/api1: Data is not defined
+GET /api1 500 88 - 1178.692 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 500 88 - 1178.692 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
 Queue lengths - FIFO: 1, Priority: 0, RoundRobin: 0
-Request to /api1 routed to http://localhost:4000/api1 - Duration: 1007ms
-GET /api1 200 33 - 1007.712 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
-GET /api1 200 33 - 1007.712 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
-Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 1
-Request to /api3 routed to http://localhost:4000/api3 - Duration: 4ms
-GET /api3 200 33 - 4.906 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
-GET /api3 200 33 - 4.906 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
-Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 1
-Error routing the request to http://localhost:4000/api3: Request failed with status code 500
-GET /api3 500 104 - 5.791 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
-GET /api3 500 104 - 5.791 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Request to /api1 routed to http://localhost:4000/api1 - Duration: 1091ms
+GET /api1 200 39 - 1094.114 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 200 39 - 1094.114 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths- FIFO : 1,Priority : 0,RoundRobin : 0
+Error routing the request to http://localhost:4000/api1: Data is not defined
+GET /api1 500 88 - 1105.856 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 500 88 - 1105.856 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths - FIFO: 1, Priority: 0, RoundRobin: 0
+Request to /api1 routed to http://localhost:4000/api1 - Duration: 1075ms
+GET /api1 200 39 - 1078.102 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 200 39 - 1078.102 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths- FIFO : 1,Priority : 0,RoundRobin : 0
+Error routing the request to http://localhost:4000/api1: Data is not defined
+GET /api1 500 88 - 1074.927 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 500 88 - 1074.927 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0

@@ -1,4 +1,4 @@
-// config/routes.js
+
 module.exports = {
   routes: [
     { path: "/api1", url: "http://localhost:4000/api1" },
