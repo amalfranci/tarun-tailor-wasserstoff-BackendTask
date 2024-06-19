@@ -1,1 +1,16 @@
-::1 - - [18/Jun/2024:09:39:20 +0000] "GET /api2 HTTP/1.1" 500 1445 "-" "PostmanRuntime/7.39.0"
+Queue lengths - FIFO: 0, Priority: 1, RoundRobin: 0
+GET /api2   -  ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api2   -  ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Request to /api2 routed to http://localhost:4000/api2 - Duration: 6102ms
+Queue lengths - FIFO: 1, Priority: 0, RoundRobin: 0
+Request to /api1 routed to http://localhost:4000/api1 - Duration: 1007ms
+GET /api1 200 33 - 1007.712 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api1 200 33 - 1007.712 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 1
+Request to /api3 routed to http://localhost:4000/api3 - Duration: 4ms
+GET /api3 200 33 - 4.906 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api3 200 33 - 4.906 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 1
+Error routing the request to http://localhost:4000/api3: Request failed with status code 500
+GET /api3 500 104 - 5.791 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0
+GET /api3 500 104 - 5.791 ms Queue lengths - FIFO: 0, Priority: 0, RoundRobin: 0

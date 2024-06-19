@@ -1,24 +1,28 @@
-const express = require('express')
-const app = express()
-const PORT = 4000
+// mockApis.js
+const express = require('express');
+const app = express();
+const PORT = 4000;
 
-app.use(express.json())
+app.use(express.json());
 
 app.get('/api1', (req, res) => {
-    
-    setTimeout(() => res.json({ message: "Response from AP1 1" }), 1000);
-
-})
+    setTimeout(() => res.json({ message: "Response from API 1" }), 1000);
+});
 
 app.get('/api2', (req, res) => {
-    res.json({message:'Response from API 2'})
-})
+    setTimeout(() => res.json({ message: "Response from API 2" }), 6000);  // Simulate slow response
+});
 
-app.post('/graphql', (req, res) => {
-    setTimeout(()=>res.json({data:{message:'Response from GRAPHQL API'}}),500)
-})
+let errorToggle = false;
+app.get('/api3', (req, res) => {
+    if (errorToggle) {
+        res.status(500).json({ error: 'Internal Server Error' });
+    } else {
+        res.json({ message: 'Response from API 3' });
+    }
+    errorToggle = !errorToggle; // Toggle between success and error responses
+});
 
 app.listen(PORT, () => {
-    
-    console.log(`mock APIs runing on port ${PORT}`)
-})
+    console.log(`Mock APIs running on port ${PORT}`);
+});
